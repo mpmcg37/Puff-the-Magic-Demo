@@ -96,7 +96,7 @@
     }
       mode = packetBuffer[0];
       // send a reply, to the IP address and port that sent us the packet we received
-      Udp.beginPacket(Udp.remoteIP(), localPort+1);
+      Udp.beginPacket(Udp.remoteIP(), Udp.remotePort());
       Udp.write(ReplyBuffer);
       Udp.endPacket();
     }
