@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vu6-Mv-93i">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View-->
+        <scene sceneID="7CP-v1-LJM">
+            <objects>
+                <viewController title="Main View" id="Vu6-Mv-93i" customClass="ViewController" customModule="Puff_the_Magic_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cbP-Kr-p9I"/>
+                        <viewControllerLayoutGuide type="bottom" id="3WT-OJ-VRv"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="ZY6-bC-QdN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXN-60-GD4">
+                                <rect key="frame" x="175" y="413" width="251" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Wake the Dragon" image="fire-3x">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseAudio:" destination="Vu6-Mv-93i" eventType="touchUpInside" id="33k-AO-AC7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puff the Magic Demo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sd-EX-FQH">
+                                <rect key="frame" x="138" y="28" width="325" height="44"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzm-4h-Rdt">
+                                <rect key="frame" x="127" y="80" width="347" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="View Configuration Page" image="wrench-3x">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openConfig:" destination="Vu6-Mv-93i" eventType="touchUpInside" id="wZ1-tr-spQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-cd-Rbe">
+                                <rect key="frame" x="267" y="124" width="66" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQN-49-KeX">
+                                <rect key="frame" x="16" y="163" width="568" height="242"/>
+                                <string key="text">This is a demo meant to show how easy it is to get started developing iOS apps that can communicate with the CC3200. Clicking the "View Configuration Page" button will take you to the CC3200's Configuration Page. Clicking "Wake the Dragon" or double tapping the screen will allow you to select the sounds to play while running a demo in Smaug or Puff. Cycling between these Dragons changes who gets woken up.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pB-Ch-WLC">
+                                <rect key="frame" x="268" y="509" width="64" height="64"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" image="media-stop-8x"/>
+                                <connections>
+                                    <action selector="stop" destination="Vu6-Mv-93i" eventType="touchUpInside" id="TWD-Pf-nE9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gde-bM-KiL" userLabel="Next">
+                                <rect key="frame" x="410" y="509" width="64" height="64"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" image="media-skip-forward-8x"/>
+                                <connections>
+                                    <action selector="next" destination="Vu6-Mv-93i" eventType="touchUpInside" id="ons-bZ-hVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceP-Qu-7Ew" userLabel="Prev">
+                                <rect key="frame" x="127" y="509" width="64" height="64"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" image="media-skip-backward-8x"/>
+                                <connections>
+                                    <action selector="prev" destination="Vu6-Mv-93i" eventType="touchUpInside" id="zky-q5-PQa"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DT4-7G-O5A">
+                                <rect key="frame" x="243" y="457" width="115" height="29"/>
+                                <segments>
+                                    <segment title="Smaug"/>
+                                    <segment title="Puff"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74509803919999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="XQN-49-KeX" firstAttribute="centerX" secondItem="rXN-60-GD4" secondAttribute="centerX" id="08O-Ji-YMC"/>
+                            <constraint firstItem="DT4-7G-O5A" firstAttribute="top" secondItem="rXN-60-GD4" secondAttribute="bottom" constant="8" symbolic="YES" id="1pp-TZ-TyS"/>
+                            <constraint firstItem="4pB-Ch-WLC" firstAttribute="top" secondItem="DT4-7G-O5A" secondAttribute="bottom" constant="24" id="2FQ-k4-KFM"/>
+                            <constraint firstItem="XQN-49-KeX" firstAttribute="centerX" secondItem="ohW-cd-Rbe" secondAttribute="centerX" id="4X3-kF-1DM"/>
+                            <constraint firstItem="4pB-Ch-WLC" firstAttribute="top" secondItem="ceP-Qu-7Ew" secondAttribute="top" id="5Iz-zL-qWC"/>
+                            <constraint firstItem="XQN-49-KeX" firstAttribute="trailing" secondItem="ZY6-bC-QdN" secondAttribute="trailingMargin" id="7RB-ff-ZeY"/>
+                            <constraint firstItem="ceP-Qu-7Ew" firstAttribute="leading" secondItem="uzm-4h-Rdt" secondAttribute="leading" id="8ma-se-xPu"/>
+                            <constraint firstItem="rXN-60-GD4" firstAttribute="centerX" secondItem="DT4-7G-O5A" secondAttribute="centerX" id="8tK-Jr-8bd"/>
+                            <constraint firstItem="3WT-OJ-VRv" firstAttribute="top" secondItem="ceP-Qu-7Ew" secondAttribute="bottom" constant="27" id="9Hs-xm-FJ7"/>
+                            <constraint firstItem="uzm-4h-Rdt" firstAttribute="top" secondItem="2Sd-EX-FQH" secondAttribute="bottom" constant="8" symbolic="YES" id="Fia-UF-hcx"/>
+                            <constraint firstItem="2Sd-EX-FQH" firstAttribute="top" secondItem="cbP-Kr-p9I" secondAttribute="bottom" constant="8" symbolic="YES" id="JQV-ac-zb2"/>
+                            <constraint firstItem="rXN-60-GD4" firstAttribute="top" secondItem="XQN-49-KeX" secondAttribute="bottom" constant="8" symbolic="YES" id="RKJ-Dt-Nn2"/>
+                            <constraint firstItem="2Sd-EX-FQH" firstAttribute="centerX" secondItem="uzm-4h-Rdt" secondAttribute="centerX" id="XMy-Ea-jcf"/>
+                            <constraint firstItem="DT4-7G-O5A" firstAttribute="centerX" secondItem="4pB-Ch-WLC" secondAttribute="centerX" id="aCC-LB-igJ"/>
+                            <constraint firstItem="XQN-49-KeX" firstAttribute="leading" secondItem="ZY6-bC-QdN" secondAttribute="leadingMargin" id="aGo-4P-mSn"/>
+                            <constraint firstItem="rXN-60-GD4" firstAttribute="top" secondItem="XQN-49-KeX" secondAttribute="bottom" constant="86" id="atA-H1-7Mw"/>
+                            <constraint firstItem="ohW-cd-Rbe" firstAttribute="centerX" secondItem="uzm-4h-Rdt" secondAttribute="centerX" id="bqQ-hj-V1U"/>
+                            <constraint firstItem="XQN-49-KeX" firstAttribute="top" secondItem="ohW-cd-Rbe" secondAttribute="bottom" constant="8" symbolic="YES" id="dAi-Qg-2cC"/>
+                            <constraint firstItem="ohW-cd-Rbe" firstAttribute="top" secondItem="uzm-4h-Rdt" secondAttribute="bottom" constant="8" symbolic="YES" id="hxZ-aV-VaM"/>
+                            <constraint firstItem="gde-bM-KiL" firstAttribute="top" secondItem="4pB-Ch-WLC" secondAttribute="top" id="jO7-aF-ygV"/>
+                            <constraint firstItem="uzm-4h-Rdt" firstAttribute="trailing" secondItem="gde-bM-KiL" secondAttribute="trailing" id="tB6-yP-IEw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="atA-H1-7Mw"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qqf-XN-frz" appends="YES" id="yxk-aZ-x49"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" id="C5l-W3-GIA"/>
+                    <connections>
+                        <outlet property="modeControl" destination="DT4-7G-O5A" id="amq-Ef-lkB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEA-4k-xr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="qqf-XN-frz">
+                    <connections>
+                        <action selector="chooseAudio:" destination="Vu6-Mv-93i" id="9PT-J0-w4j"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1854" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fire-3x" width="24" height="24"/>
+        <image name="media-skip-backward-8x" width="64" height="64"/>
+        <image name="media-skip-forward-8x" width="64" height="64"/>
+        <image name="media-stop-8x" width="64" height="64"/>
+        <image name="wrench-3x" width="24" height="24"/>
+    </resources>
+</document>
