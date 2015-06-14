@@ -2,6 +2,7 @@
 The necessary files to start basic communication between a CC3200 board and an iOS device
 
 Getting Started Energia: 
+
   http://energia.nu/cc3200guide/
   
   http://energia.nu/guide/ 
@@ -20,13 +21,10 @@ Download from the App Store
   - https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12#
   
 Great resource for first time App Creation 
-  -https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/FirstTutorial.html
+  - https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/FirstTutorial.html
 
 
 •	A developer’s license is required to distribute to the App Store.
-
-
-
 
 Use of UDP.swift is the only base requirement to start communicating with the CC3200 in iOS.  Since the CC3200 creates a Wi-Fi network the only way to communicate is by joining its’ Wi-Fi network; called “CC3200 Demo” with password “password”. The IP address of the CC3200 will be 192.168.1.1 and, if unchanged, the port will be 2390. Any device can send a UDP packet to the CC3200 and this iOS app is just one example. 
 
