@@ -16,11 +16,15 @@ Getting Started Energia:
 •	Following the upgrading firmware, instructions on the guide are VITAL to getting the Wi-Fi modules working. This is the most critical part of setup but once it’s done it never needs to be done again.
 
 Getting Started Xcode: 
-Download from the App Store - https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12#
-Great resource for first time App Creation -
-https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/FirstTutorial.html
+Download from the App Store 
+  - https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12#
+  
+Great resource for first time App Creation 
+  -https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/FirstTutorial.html
+
 
 •	A developer’s license is required to distribute to the App Store.
+
 
 
 
