@@ -3,11 +3,16 @@ The necessary files to start basic communication between a CC3200 board and an i
 
 Getting Started Energia: 
   http://energia.nu/cc3200guide/
+  
   http://energia.nu/guide/ 
+  
   http://energia.nu/reference/
+  
   http://energia.nu/reference/wifi/
+  
 
 •	This was the most help getting started followed second by the build in examples in Energia. They made creating a Wi-Fi network, sending and receiving UDP packets, and other development a simple jump.
+
 •	Following the upgrading firmware, instructions on the guide are VITAL to getting the Wi-Fi modules working. This is the most critical part of setup but once it’s done it never needs to be done again.
 
 Getting Started Xcode: 
